@@ -10,7 +10,7 @@ def split_layer_dec(absolute_path):
             
             new_input = 'x = Variable(x.data, requires_grad=True)'
             put_to_input_tmp = 'self.input.append(x)\nst_time_fwd = time.time()'
-            put_to_output_tmp = 'self.output.append(x)\ned_time_fwd = time.time()\nfwd_time_lst.append(ed_time_fwd-st_time_fwd)'
+            put_to_output_tmp = 'ed_time_fwd = time.time()\nself.output.append(x)\nfwd_time_lst.append(ed_time_fwd-st_time_fwd)'
 
             fwd_code = inspect.getsource(ori_fwd).split('\n')
             new_fwd_code = fwd_code.copy()

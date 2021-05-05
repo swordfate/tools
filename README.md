@@ -1,7 +1,14 @@
 # tools
 Self-built tools for research.
 
-[TOC]
+- [tools](#tools)
+  * [PyTorch Related](#pytorch-related)
+    + [1. Split\_layer](#1-split--layer)
+      - [Usage](#usage)
+      - [Others](#others)
+      - [Requirements](#requirements)
+
+
 
 ## PyTorch Related
 
